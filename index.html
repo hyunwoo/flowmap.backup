@@ -1,7 +1,75 @@
-<!DOCTYPE html>
-<html>
+<head>
+  <link href="http://vjs.zencdn.net/6.2.0/video-js.css" rel="stylesheet">
+  <!-- If you'd like to support IE8 -->
+  <!-- <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+</head>
+
+<style type="text/css">
+	body {
+		background : #333;
+		color : #fff;
+	}
+	.contents{
+		background : #333;
+		padding : 40px 0;
+		max-width : 1080px;		
+		margin: auto
+	}
+	video {
+		width : 720px !important;
+		height : 480px !important;
+	}
+	.title {
+		font-size : 30px;
+		font-family: AppleSystemUI, AppleGothic, sans-serif;
+		text-align: center;
+		font-weight: 800;
+		margin-bottom: 20px;
+	}
+
+	.download-group{
+		text-align: center;
+		padding : 40px 0;
+	}
+	a.download {
+		
+		width : 400px !important;
+		height : 50px;
+		padding : 10px 20px;
+		line-height: 50px;
+		text-align: center;
+		border-radius: 5px ;
+		background : #fa0;
+		color : #fff;
+		font-size : 26px;
+		font-weight: 800;
+		text-decoration: none;		
+		cursor: pointer;
+		display: block !important;
+		margin: 10px auto;
+
+	}
+	a.download:hover {
+		background : #e89300;
+	}
+</style>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<div class="contents">
+		<div class="title">FLOW CIRCLE</div>
+	  <video id="my-video" class="video-js" controls preload="auto"  
+	  poster="./poster.png" data-setup="{}">
+	    <source src="./flowcircle_video.mp4" type='video/mp4'>    
+	    <p class="vjs-no-js">
+	      To view this video please enable JavaScript, and consider upgrading to a web browser that
+	      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+	    </p>
+	  </video>
+	  <div class="download-group">
+	  	<a class="download" href='./flowcircle_video.mp4'> VIDEO </a>
+	  	<a class="download" href='./application.macosx.zip'> MAC OS Application </a>
+	  	<a class="download" href='./application.window32.zip'> Win 32 Application </a>
+	  	<a class="download" href='./application.window64.zip'> Win 64 Application </a>	  	
+	  </div>
+  </div>
+  <script src="http://vjs.zencdn.net/6.2.0/video.js"></script>
 </body>
-</html>
